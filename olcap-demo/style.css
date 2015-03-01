@@ -27,7 +27,7 @@ a:hover {
 	padding-right: 0;
     width:873px;
     height: auto;
- 
+
 }
 
 .logo {
@@ -47,8 +47,20 @@ img a {
 #socialmedia {
 	float: right;
 	text-align: right;
-	width: 300px;
+	width: 450px !important;
 	padding: 40px 15px 0 0;
+}
+
+#donatebutton {
+	margin-left: 55px;
+	width: 128px;
+	height: 128px;
+	float: left;
+	text-align: center;
+	font-style: Tahoma;
+	font-size: 12px;
+	font-style: italic;
+	color: #333;
 }
 
 #navigation {
@@ -69,7 +81,7 @@ img a {
 
 
 	}
-	
+
 #navigation li {
 		border-right: 1px dashed #fff;
 		float: left;
@@ -84,7 +96,7 @@ img a {
 	border: none;
 	color: #fff;
 	letter-spacing: 1px;
-	font-size: 1em;	
+	font-size: 1em;
 	background-color: #5aa2d1;
 }
 
@@ -165,7 +177,7 @@ h1.title {
 	margin-top: 0;
 	text-align: center;
 	line-height: 60px;
-	color: #006db4;	
+	color: #006db4;
 	border-bottom: 2px solid #f2c40d;
 	border-top: 2px solid #f2c40d;
 	background: url(images/banner-01.png) no-repeat right;
@@ -175,7 +187,7 @@ h1.titlevariation {
 	margin-top: 0;
 	text-align: center;
 	line-height: 60px;
-	color: #006db4;	
+	color: #006db4;
 	border-bottom: 2px solid #f2c40d;
 	border-top: 2px solid #f2c40d;
 	background: url(images/banner-01.png) no-repeat top;
