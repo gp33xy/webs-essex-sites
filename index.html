@@ -15,7 +15,7 @@
 			// Setup the Google map
 			loadMap(latitude, longitude);
 			// Setup the addresses
-			var latlong = OSGridToLatLong("TQ596756"); setupMarker(latlong.lat, latlong.lng, "River Thames - Swanscombe [Thames Estuary]", "","N", "N", "Y");
+var latlong = OSGridToLatLong("TQ596756"); setupMarker(latlong.lat, latlong.lng, "River Thames - Swanscombe [Thames Estuary]", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TQ392921"); setupMarker(latlong.lat, latlong.lng, "24010: Highams Park Lake", "","Y", "N", "Y");
 var latlong = OSGridToLatLong("TQ371900"); setupMarker(latlong.lat, latlong.lng, "24042: Lloyds Park", "","Y", "N", "Y");
 var latlong = OSGridToLatLong("TQ463845"); setupMarker(latlong.lat, latlong.lng, "24075: Mayesbrook Park Lakes", "","Y", "N", "Y");
@@ -88,7 +88,7 @@ var latlong = OSGridToLatLong("TQ583789"); setupMarker(latlong.lat, latlong.lng,
 var latlong = OSGridToLatLong("TQ594808"); setupMarker(latlong.lat, latlong.lng, "25049: Hall Farm South Ockendon", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TQ444987"); setupMarker(latlong.lat, latlong.lng, "25051: Theydon Bois Green Pond", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TQ403952"); setupMarker(latlong.lat, latlong.lng, "25052: Connaught Water (Epping Forest)", "Needs someone to take over this site","M", "N", "Y");
-var latlong = OSGridToLatLong("TM031241"); setupMarker(latlong.lat, latlong.lng, "25061: Essex University Lake", "","N", "N", "Y");
+var latlong = OSGridToLatLong("TM031241"); setupMarker(latlong.lat, latlong.lng, "25061: Essex University Lake", "","Y", "N", "Y");
 var latlong = OSGridToLatLong("TQ445850"); setupMarker(latlong.lat, latlong.lng, "25065: Barking Park", "","Y", "N", "Y");
 var latlong = OSGridToLatLong("TQ451862"); setupMarker(latlong.lat, latlong.lng, "25066: South Park (Ilford)", "","Y", "N", "Y");
 var latlong = OSGridToLatLong("TQ434873"); setupMarker(latlong.lat, latlong.lng, "25067: Valentines Park", "new counter October 2014","Y", "N", "Y");
@@ -132,7 +132,7 @@ var latlong = OSGridToLatLong("TQ580794"); setupMarker(latlong.lat, latlong.lng,
 var latlong = OSGridToLatLong("TQ598790"); setupMarker(latlong.lat, latlong.lng, "25232: Warren and Lion Gorges", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TQ608789"); setupMarker(latlong.lat, latlong.lng, "25233: Grays Chalk Pits", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TL859112"); setupMarker(latlong.lat, latlong.lng, "25252: Great Totham Gravel Pit Maldon", "","N", "N", "Y");
-var latlong = OSGridToLatLong("TM061204"); setupMarker(latlong.lat, latlong.lng, "25261: Brightlingsea, Moverons, Alresford and Wivenhoe Gravel Pits", "","N", "N", "Y");
+var latlong = OSGridToLatLong("TM061204"); setupMarker(latlong.lat, latlong.lng, "25261: Brightlingsea, Moverons, Alresford and Wivenhoe Gravel Pits", "","Y", "N", "Y");
 var latlong = OSGridToLatLong("TM013238"); setupMarker(latlong.lat, latlong.lng, "25301: Colchester Hythe", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TL995345"); setupMarker(latlong.lat, latlong.lng, "25311: Boxted Mill Area", "","N", "N", "Y");
 var latlong = OSGridToLatLong("TM219177"); setupMarker(latlong.lat, latlong.lng, "25341: Holland Marshes", "key/priority site","Y", "Y", "Y");
@@ -153,6 +153,7 @@ var latlong = OSGridToLatLong("TM079150"); setupMarker(latlong.lat, latlong.lng,
 var latlong = OSGridToLatLong("TM065145"); setupMarker(latlong.lat, latlong.lng, "25953: Colne Estuary [Colne Estuary]", "Key / priority site Parent site not counted at this level","N", "Y", "N");
 var latlong = OSGridToLatLong("TM062178"); setupMarker(latlong.lat, latlong.lng, "25954: Alresford Creek to Brightlingsea [Colne Estuary]", "no data for 2013/14 may need new counter","N", "Y", "Y");
 var latlong = OSGridToLatLong("TM032220"); setupMarker(latlong.lat, latlong.lng, "25955: Colchester Hythe and Rowhedge [Colne Estuary]", "Part of Colne Estuary complex","N", "Y", "Y");
+
 		});
 		// Loads the maps
 	    loadMap = function (latitude, longitude) {
@@ -205,6 +206,23 @@ var latlong = OSGridToLatLong("TM032220"); setupMarker(latlong.lat, latlong.lng,
 	</script>
 </head>
 <body>
-	<div id="map" style="width:1000px;height:800px;"></div>
+	<h2>WeBS Essex (Other) Sites</h2>
+	<div id="key" style="float: left">
+		<table cellspacing="0" cellpadding="4" border="1">
+			<tr>
+				<th>KEY</th>
+				<th>Priority Site</th>
+				<th>Normal Site</th>
+			</tr>
+			<tr><td style="font-weight: bold; text-decoration: underline">Counter needed</td><td style="text-align:center"><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" /></td><td style="text-align:center"><img src="http://maps.google.com/mapfiles/ms/icons/red.png" /></td></tr>
+			<tr><td style="font-weight: bold">Unsure if active</td><td style="text-align:center"><img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" /></td><td style="text-align:center"><img src="http://maps.google.com/mapfiles/ms/icons/yellow.png" /></td></tr>
+			<tr><td style="font-weight: bold">Counter assigned</td><td style="text-align:center"><img src="http://maps.google.com/mapfiles/ms/icons/green-dot.png" /></td><td style="text-align:center"><img src="http://maps.google.com/mapfiles/ms/icons/green.png" /></td></tr>
+		</table>
+	</div>
+	<div id="request" style="float: left; padding: 10px; width: 400px">
+		<p>If you would like to count any of these sites for the WeBS scheme (or any wetland site e.g. rivers, streams, gravel pits, ponds, etc. not identified below) please contact me at: gp33xy@icloud.com</p>
+		<p>Please note this does not include the major estuarine sites; they are managed individually by other local organisers.</p>
+	</div>
+	<div id="map" style="width:800px;height:700px;clear:left"></div>
 </body>
 </html>
